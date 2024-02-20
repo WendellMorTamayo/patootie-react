@@ -10,7 +10,7 @@ const navItems =  ['Home', 'Quotes' ];
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: '#343334'}}>
         <Toolbar>
         {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>

@@ -13,10 +13,9 @@ const CustomButtonGroup = ({
     <ButtonGroup
       variant="outline"
       aria-label="Basic button group"
-      className="flex justify-between w-full bg-transparent bg-blue-50 text-gray-950"
+      className="flex justify-between w-full bg-transparent border bg-blue-50 text-gray-950 "
       sx={{ color: "black" }}>
       <Button
-        className="flex-grow hover:bg-green-700"
         onMouseEnter={() => {
           jumpAction();
         }}
@@ -29,6 +28,7 @@ const CustomButtonGroup = ({
           border: 1,
           marginRight: 1,
           borderRadius: 0,
+          flexGrow: 1,
         }}>
         Jump
       </Button>
@@ -40,6 +40,7 @@ const CustomButtonGroup = ({
           border: 1,
           marginRight: 1,
           borderRadius: 0,
+          flexGrow: 1,
         }}
         onMouseEnter={() => {
           leftAction();
@@ -57,6 +58,7 @@ const CustomButtonGroup = ({
           border: 1,
           marginRight: 1,
           borderRadius: 0,
+          flexGrow: 1,
         }}
         onMouseEnter={() => {
           rightAction();
@@ -73,6 +75,7 @@ const CustomButtonGroup = ({
           borderColor: "black",
           border: 1,
           borderRadius: 0,
+          flexGrow: 1,
         }}
         onMouseEnter={() => {
           dockAction();
